@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body {
+    width: 100vw;
+    max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header-li {
+   
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-family: Arial;
+ 
+    
+    
+}
+
+li {
+ 
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+li a:hover:not(.active) {
+    color: white;
+    font-weight:bold;
+  }
+ 
+.banner {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    
+    
+}
+.banner-image{
+    width: 100%;
+    height: auto;
+
+ }
+
+.banner i {
+    font-size: 1rem;
+    flex: 0 0 1rem;
+}
+
+.search {
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 0.25rem;
+    border: 1px solid #000000;
+}
+
+.search-bar:focus, .search-bar:hover {
+    outline: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 2px 15px 2px 40px;
+    border: none;
+    flex: 1 1 100%;
+    width:inherit;
+}
+
+
+    input[type=text] {
+   
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    
+   
+    }
+ 
+.search-submit {
+    flex: 0 0 1rem;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.search-submit i {
+    border:none;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    background-color: #F27021;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.header-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    
+
+}
+
+.header-li a {
+    font-weight: bold;
+    color: black;
+}
+
+.nav-active {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in;
+
+}
+
+
+@media screen and (min-width: 768px){
+
+    .banner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+
+    .fa-bars {
+        display: none !important;
+    }
+
+    
+    .centre {
+        text-align: center;
+    }    
+
+    .search {
+        flex: 0 0 16rem;
+        order: 1;
+    }
+
+    .header-nav {
+        padding: 1rem 0;
+        max-height: 200px;
+        
+    }
+    
+    .header-ul {
+        flex-direction: row;
+        font-size: 5vw;
+        justify-content: space-evenly;
+    
+    }
+    
+}
